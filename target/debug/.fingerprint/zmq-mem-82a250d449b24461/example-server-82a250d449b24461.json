@@ -1,0 +1,1 @@
+{"rustc":18428592158185880696,"features":"[]","target":11513740017371891296,"profile":14891217944882224483,"path":14310728301434003812,"deps":[[300900241173941925,"zmq",false,1385425011612446414]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/zmq-mem-82a250d449b24461/dep-example-server-82a250d449b24461"}}],"rustflags":[],"metadata":12913788519186230265}
