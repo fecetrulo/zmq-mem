@@ -1,6 +1,8 @@
 use std::ops::Deref;
 use zmq::{self, SocketType};
 static BYTES: usize = 1_000_000;
+static META1: &str = "meta1";
+static META2: &str = "meta2";
 
 fn main() {
     let mut count = 0;
@@ -8,7 +10,7 @@ fn main() {
         let ctx = zmq::Context::new();
         let socket = ctx.socket(SocketType::REQ).unwrap();
         let result = {
-            socket.connect("ipc:///tmp/socket.ipc").unwrap();
+            socket.connect("ipc:///tmp/server.ipc").unwrap();
 
             socket.send_multipart(&["GET_INFO"], 0).unwrap();
             let status_msg = socket.recv_msg(0).unwrap();
@@ -34,8 +36,8 @@ fn main() {
 
         // Checks if the messages are correct
         result.into_iter().for_each(|(meta1, meta2, info)| {
-            if std::str::from_utf8(&meta1).unwrap() == "meta1"
-                && std::str::from_utf8(&meta2).unwrap() == "meta2"
+            if std::str::from_utf8(&meta1).unwrap() == META1
+                && std::str::from_utf8(&meta2).unwrap() == META2
                 && info.len() == BYTES
             {
                 count += 1;

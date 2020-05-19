@@ -1,10 +1,12 @@
 use zmq;
 static BYTES: usize = 1_000_000;
+static META1: &str = "meta1";
+static META2: &str = "meta2";
 
 fn main() {
     let ctx = zmq::Context::new();
     let socket = ctx.socket(zmq::SocketType::ROUTER).unwrap();
-    socket.bind("ipc:///tmp/socket.ipc").unwrap();
+    socket.bind("ipc:///tmp/server.ipc").unwrap();
 
     loop {
         let events = socket.get_events().unwrap() as zmq::PollEvents;
@@ -30,8 +32,8 @@ pub fn send_info(socket: &zmq::Socket) {
     socket.send("OK", zmq::SNDMORE).unwrap();
 
     let info: Vec<u8> = vec![0; BYTES];
-    let meta1 = "meta1";
-    let meta2 = "meta2";
+    let meta1 = META1;
+    let meta2 = META2;
     let qtd = 2000;
 
     (1..=qtd).for_each(|i| {
