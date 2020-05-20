@@ -46,5 +46,5 @@ fn main() {
     }
 
     println!("message count: {}", count);
-    loop {}
+    std::thread::sleep(std::time::Duration::from_millis(5000));
 }
