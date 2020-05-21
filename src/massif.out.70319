@@ -1,0 +1,730 @@
+desc: (none)
+cmd: ./target/release/examples/client
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=28655863
+mem_heap_B=2001619917
+mem_heap_extra_B=34755
+mem_stacks_B=0
+heap_tree=peak
+n2: 2001619917 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2000080000 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 2000080000 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 2000080000 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 2000080000 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 2000080000 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 2000080000 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 2000080000 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 2000080000 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1539917 in 79 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=58727662
+mem_heap_B=2000627737
+mem_heap_extra_B=36063
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2000627737 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1969078760 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 1969078760 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 1969078760 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 1969078760 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 1969078760 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 1969078760 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 1969078760 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 1969078760 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 31000000 0x10DA03: client::main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+  n1: 31000000 0x10D362: std::rt::lang_start::{{closure}} (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+   n1: 31000000 0x117962: {{closure}} (rt.rs:49)
+    n1: 31000000 0x117962: std::panicking::try::do_call (panicking.rs:292)
+     n1: 31000000 0x119129: __rust_maybe_catch_panic (lib.rs:80)
+      n1: 31000000 0x1183DC: try<i32,closure-0> (panicking.rs:271)
+       n1: 31000000 0x1183DC: catch_unwind<closure-0,i32> (panic.rs:394)
+        n1: 31000000 0x1183DC: std::rt::lang_start_internal (rt.rs:48)
+         n0: 31000000 0x10E331: main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+ n0: 548977 in 80 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=82784062
+mem_heap_B=2001634801
+mem_heap_extra_B=37095
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=114860401
+mem_heap_B=2001644977
+mem_heap_extra_B=38391
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=151949068
+mem_heap_B=2001651483
+mem_heap_extra_B=39829
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=180016256
+mem_heap_B=2000665259
+mem_heap_extra_B=40933
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=210087710
+mem_heap_B=2000653399
+mem_heap_extra_B=41945
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=252187710
+mem_heap_B=2000660843
+mem_heap_extra_B=43637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=279252049
+mem_heap_B=2000665473
+mem_heap_extra_B=44727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=315337926
+mem_heap_B=2000674041
+mem_heap_extra_B=46063
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=342402265
+mem_heap_B=2000678671
+mem_heap_extra_B=47185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=377486211
+mem_heap_B=2000668842
+mem_heap_extra_B=48590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=401543544
+mem_heap_B=2000672479
+mem_heap_extra_B=49617
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=433619936
+mem_heap_B=2001678047
+mem_heap_extra_B=50873
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2001678047 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1595063800 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 1595063800 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 1595063800 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 1595063800 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 1595063800 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 1595063800 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 1595063800 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 1595063800 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 406000000 0x10DA03: client::main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+  n1: 406000000 0x10D362: std::rt::lang_start::{{closure}} (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+   n1: 406000000 0x117962: {{closure}} (rt.rs:49)
+    n1: 406000000 0x117962: std::panicking::try::do_call (panicking.rs:292)
+     n1: 406000000 0x119129: __rust_maybe_catch_panic (lib.rs:80)
+      n1: 406000000 0x1183DC: try<i32,closure-0> (panicking.rs:271)
+       n1: 406000000 0x1183DC: catch_unwind<closure-0,i32> (panic.rs:394)
+        n1: 406000000 0x1183DC: std::rt::lang_start_internal (rt.rs:48)
+         n0: 406000000 0x10E331: main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+ n0: 614247 in 80 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=466698230
+mem_heap_B=2000667180
+mem_heap_extra_B=52164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=498774615
+mem_heap_B=2000672753
+mem_heap_extra_B=53431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=530851007
+mem_heap_B=2001678321
+mem_heap_extra_B=54735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=566936036
+mem_heap_B=2000705311
+mem_heap_extra_B=56089
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=595002736
+mem_heap_B=2000709911
+mem_heap_extra_B=57209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=630086159
+mem_heap_B=2000700077
+mem_heap_extra_B=58547
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=672186159
+mem_heap_B=2000707521
+mem_heap_extra_B=60223
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=714286191
+mem_heap_B=2000698565
+mem_heap_extra_B=61875
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=742352891
+mem_heap_B=2000703165
+mem_heap_extra_B=63011
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=763402982
+mem_heap_B=2000706887
+mem_heap_extra_B=63801
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2000706887 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1266050640 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 1266050640 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 1266050640 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 1266050640 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 1266050640 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 1266050640 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 1266050640 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 1266050640 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 734000000 0x10DA03: client::main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+  n1: 734000000 0x10D362: std::rt::lang_start::{{closure}} (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+   n1: 734000000 0x117962: {{closure}} (rt.rs:49)
+    n1: 734000000 0x117962: std::panicking::try::do_call (panicking.rs:292)
+     n1: 734000000 0x119129: __rust_maybe_catch_panic (lib.rs:80)
+      n1: 734000000 0x1183DC: try<i32,closure-0> (panicking.rs:271)
+       n1: 734000000 0x1183DC: catch_unwind<closure-0,i32> (panic.rs:394)
+        n1: 734000000 0x1183DC: std::rt::lang_start_internal (rt.rs:48)
+         n0: 734000000 0x10E331: main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+ n0: 656247 in 80 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=798486439
+mem_heap_B=2000695965
+mem_heap_extra_B=65195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=819536348
+mem_heap_B=2000699687
+mem_heap_extra_B=66017
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=847603130
+mem_heap_B=2000705375
+mem_heap_extra_B=67161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=875669830
+mem_heap_B=2000709975
+mem_heap_extra_B=68217
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=910753171
+mem_heap_B=2000699053
+mem_heap_extra_B=69467
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=943831840
+mem_heap_B=2000705679
+mem_heap_extra_B=70897
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=965884292
+mem_heap_B=2000709371
+mem_heap_extra_B=71765
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=987936594
+mem_heap_B=2000696663
+mem_heap_extra_B=72577
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1021015181
+mem_heap_B=2000702201
+mem_heap_extra_B=73871
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1054093800
+mem_heap_B=2000691339
+mem_heap_extra_B=75157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1087172480
+mem_heap_B=2000770605
+mem_heap_extra_B=76451
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1109224065
+mem_heap_B=2001775425
+mem_heap_extra_B=77423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1131277466
+mem_heap_B=2000779077
+mem_heap_extra_B=78259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1153329768
+mem_heap_B=2000766369
+mem_heap_extra_B=79103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1186408355
+mem_heap_B=2000771907
+mem_heap_extra_B=80397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1219486942
+mem_heap_B=2000777445
+mem_heap_extra_B=81707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1252565561
+mem_heap_B=2000766583
+mem_heap_extra_B=82961
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1285643281
+mem_heap_B=2001773249
+mem_heap_extra_B=84359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1318722849
+mem_heap_B=2000762347
+mem_heap_extra_B=85613
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1351801436
+mem_heap_B=2000767885
+mem_heap_extra_B=86907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1373853888
+mem_heap_B=2000771577
+mem_heap_extra_B=87791
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1395906190
+mem_heap_B=2000758869
+mem_heap_extra_B=88587
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1417958642
+mem_heap_B=2000762561
+mem_heap_extra_B=89503
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1440344876
+mem_heap_B=2000480109
+mem_heap_extra_B=78091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1462407003
+mem_heap_B=2001481665
+mem_heap_extra_B=78991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1483457680
+mem_heap_B=2001468987
+mem_heap_extra_B=79885
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1504508084
+mem_heap_B=2000471581
+mem_heap_extra_B=80731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1525557993
+mem_heap_B=2000475303
+mem_heap_extra_B=81649
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1546608084
+mem_heap_B=2000479025
+mem_heap_extra_B=82583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1567658207
+mem_heap_B=2000466347
+mem_heap_extra_B=83429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1588708116
+mem_heap_B=2000470069
+mem_heap_extra_B=84347
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1609758207
+mem_heap_B=2000473791
+mem_heap_extra_B=85281
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1630808298
+mem_heap_B=2000477513
+mem_heap_extra_B=86215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1651858239
+mem_heap_B=2000464835
+mem_heap_extra_B=87141
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2000464835 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1620000000 0x10DA03: client::main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+  n1: 1620000000 0x10D362: std::rt::lang_start::{{closure}} (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+   n1: 1620000000 0x117962: {{closure}} (rt.rs:49)
+    n1: 1620000000 0x117962: std::panicking::try::do_call (panicking.rs:292)
+     n1: 1620000000 0x119129: __rust_maybe_catch_panic (lib.rs:80)
+      n1: 1620000000 0x1183DC: try<i32,closure-0> (panicking.rs:271)
+       n1: 1620000000 0x1183DC: catch_unwind<closure-0,i32> (panic.rs:394)
+        n1: 1620000000 0x1183DC: std::rt::lang_start_internal (rt.rs:48)
+         n0: 1620000000 0x10E331: main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+ n2: 380015200 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 380015200 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 380015200 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 380015200 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 380015200 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 380015200 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 380015200 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 380015200 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 449635 in 80 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=1672908330
+mem_heap_B=2000468557
+mem_heap_extra_B=88059
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1693958239
+mem_heap_B=2000472279
+mem_heap_extra_B=88993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1715008330
+mem_heap_B=2000476001
+mem_heap_extra_B=89911
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1736058421
+mem_heap_B=2000479723
+mem_heap_extra_B=90861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1757108362
+mem_heap_B=2000467045
+mem_heap_extra_B=91739
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1778158453
+mem_heap_B=2000470767
+mem_heap_extra_B=92673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1799208544
+mem_heap_B=2000474489
+mem_heap_extra_B=93591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1820258453
+mem_heap_B=2000478211
+mem_heap_extra_B=94525
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1841308494
+mem_heap_B=2000464445
+mem_heap_extra_B=95235
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1862358403
+mem_heap_B=2000468167
+mem_heap_extra_B=95961
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2000468167 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1830000000 0x10DA03: client::main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+  n1: 1830000000 0x10D362: std::rt::lang_start::{{closure}} (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+   n1: 1830000000 0x117962: {{closure}} (rt.rs:49)
+    n1: 1830000000 0x117962: std::panicking::try::do_call (panicking.rs:292)
+     n1: 1830000000 0x119129: __rust_maybe_catch_panic (lib.rs:80)
+      n1: 1830000000 0x1183DC: try<i32,closure-0> (panicking.rs:271)
+       n1: 1830000000 0x1183DC: catch_unwind<closure-0,i32> (panic.rs:394)
+        n1: 1830000000 0x1183DC: std::rt::lang_start_internal (rt.rs:48)
+         n0: 1830000000 0x10E331: main (in /home/fecetrulo/Documents/script/zmq-mem/target/release/examples/client)
+ n2: 170006800 0x48900A9: ??? (in /usr/lib/libzmq.so.5.2.2)
+  n1: 170006800 0x48C9A9B: ??? (in /usr/lib/libzmq.so.5.2.2)
+   n1: 170006800 0x48C9D0B: ??? (in /usr/lib/libzmq.so.5.2.2)
+    n1: 170006800 0x48BBD0A: ??? (in /usr/lib/libzmq.so.5.2.2)
+     n1: 170006800 0x4885F2D: ??? (in /usr/lib/libzmq.so.5.2.2)
+      n1: 170006800 0x48C31FE: ??? (in /usr/lib/libzmq.so.5.2.2)
+       n1: 170006800 0x4909421: start_thread (in /usr/lib/libpthread-2.31.so)
+        n0: 170006800 0x4A3BB82: clone (in /usr/lib/libc-2.31.so)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 461367 in 80 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=1883500674
+mem_heap_B=2000387025
+mem_heap_extra_B=91487
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1904550765
+mem_heap_B=2000390747
+mem_heap_extra_B=92421
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1925600706
+mem_heap_B=2000378069
+mem_heap_extra_B=93299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1946650797
+mem_heap_B=2000381791
+mem_heap_extra_B=94249
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1967700888
+mem_heap_B=2000385513
+mem_heap_extra_B=95199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1988774809
+mem_heap_B=2000367475
+mem_heap_extra_B=94773
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2009833160
+mem_heap_B=2000348269
+mem_heap_extra_B=95267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=2030883069
+mem_heap_B=2000351991
+mem_heap_extra_B=96217
+mem_stacks_B=0
+heap_tree=empty
